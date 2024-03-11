@@ -12,7 +12,6 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     axios.get('http://localhost:3000/api/v1/auth/account', {
       withCredentials: true
     }).then(({ data }) => {
-      console.log(data?.token)
       setUserLogged({
         displayName: data.name,
         email: data.email

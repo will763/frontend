@@ -10,12 +10,10 @@ export default function Login() {
     if(userLogged == undefined){
       signInMicrosoft();
     }
-
-    console.log(window.location.hostname);
   }, [])
 
   const handleClick = () => {
-    window.location.href = 'http://localhost:3000/api/v1/auth/microsoft';
+    window.location.href = 'http://localhost:3000/api/v1/auth/microsoft?redirect_url=https://frontend-cyan-omega.vercel.app';
   }
 
   return (
