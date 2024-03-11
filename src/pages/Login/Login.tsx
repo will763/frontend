@@ -11,10 +11,11 @@ export default function Login() {
       signInMicrosoft();
     }
 
+    console.log(window.location.hostname);
   }, [])
 
   const handleClick = () => {
-    window.location.href = 'http://localhost:3000/api/v1/auth/microsoft'
+    window.location.href = 'http://localhost:3000/api/v1/auth/microsoft';
   }
 
   return (
