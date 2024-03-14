@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
   const [userLogged, setUserLogged] = useState<IUserLogged>(null!)
 
   function signInMicrosoft() {
-    axios.get('https://backend-production-1ae5.up.railway.app/api/v1/auth/account', {
+    axios.get('http://localhost:3000/api/v1/auth/account', {
       withCredentials: true
     }).then(({ data }) => {
       setUserLogged({
@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
   }
 
   async function signOut() {
-    window.location.href = 'https://backend-production-1ae5.up.railway.app/api/v1/auth/logout'
+    window.location.href = 'http://localhost:3000/api/v1/auth/logout'
 
   }
 
