@@ -13,7 +13,7 @@ export default function Login() {
   }, [])
 
   const handleClick = () => {
-    window.location.href = 'https://backend-production-1ae5.up.railway.app/api/v1/auth/microsoft?redirect_url=https://frontend-cyan-omega.vercel.app';
+    window.location.href = 'http://localhost:3000/api/v1/auth/microsoft?redirect_url=https://frontend-cyan-omega.vercel.app';
   }
 
   return (
